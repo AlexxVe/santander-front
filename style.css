@@ -216,5 +216,31 @@ body {
     margin: 30px;
   }
 
+.features {
+  display: grid;
+  /* grid-template-columns: 300px 300px; */
+  /* grid-template-columns: repeat(2, 300px); */
+   /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-columns: 500px 1fr; */
+  /* grid-template-columns: 1fr 1fr; */
+  
+  /* Reto 3.1 - Grid 2 filas con alto de 330px */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 330px);
 
+  /* Otra manera de hacerlo es de la sigueinte forma */
+    /* grid-template-columns: repeat(2, 1fr);
+    height: 660px;
+    grid-template-rows: repeat(2, 1fr); */
+  
+  /* Otra manera es la siguiente */
+  /* grid-template: repeat(2, 1fr) / repeat(2, 330px); */
 
+  }
+
+.feature-art {
+  background-color: blueviolet;
+  margin: 10px;
+  width: 40%;
+  height: 50px;
+}
