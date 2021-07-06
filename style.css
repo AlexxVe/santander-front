@@ -1,5 +1,6 @@
 body {
   background-color: #eeeeee;
+  margin: 0;
   }
 
   h1 {
@@ -49,11 +50,11 @@ body {
     width: 15%;
    }
 
-  .navbar{
+  /* .navbar{
     width: 70%;
     text-align: center;
     color: #025157;
-  }
+  } */
 
   .actions{
     width: 15%;
@@ -225,8 +226,8 @@ body {
   /* grid-template-columns: 1fr 1fr; */
   
   /* Reto 3.1 - Grid 2 filas con alto de 330px */
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 330px);
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 330px); */
 
   /* Otra manera de hacerlo es de la sigueinte forma */
     /* grid-template-columns: repeat(2, 1fr);
@@ -238,9 +239,281 @@ body {
 
   }
 
-.feature-art {
+/* .feature-art {
   background-color: blueviolet;
   margin: 10px;
   width: 40%;
   height: 50px;
+} */
+
+.features {
+  background-color: #025157;
+  padding: 5% 10%;
+  display: grid;
+  grid-template: repeat(2, 400px) / repeat(2, 1fr);
+}
+
+.feature-art * {
+  margin: 0;
+}
+
+.features .feature-art {
+  margin: 0 15px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.features .feature-art  {
+  padding: 60px 50px;
+  flex: 2;
+}
+
+.features .feature-art .feature-content > * {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.features .feature-art .feature-content img {
+  width: 70px;
+}
+
+.features .feature-art .feature-content h3 {
+  font-family: calibri;
+  font-size: 40px;
+  color: #343434;
+  font-weight: 400;
+}
+
+.features .feature-art .feature-content p {
+  font-family: calibri;
+  font-size: 24px;
+  color: #7e7e7e;
+  font-weight: 400;
+}
+
+.features .feature-art .feature-content a {
+  font-family: calibri;
+  font-size: 24px;
+  color: #67b54b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.features .feature-art .feature-image {
+  flex: 1;
+  width: 40%;
+  position: relative;
+  right: -10px;
+  height: 80%;
+}
+
+.features .feature-art .feature-image figure, .features .feature-art .feature-image img {
+  margin-top: 0;
+  height: 100%;
+}
+
+
+.post-work2 {
+  background-color: rgb(253, 253, 246);
+  /* border: solid rgb(182, 231, 45) */
+}
+
+.bann {
+  text-align: center;
+}
+
+.bann h1 {
+  font-family:  sans-serif bold;
+  font-size: 65px;
+  color: #025157;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 20px;
+}
+
+.bann p {
+  font-family: calibri;
+  font-size: 28px;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.bann a {
+  color: rgb(68, 187, 38);
+  text-decoration: none;
+}
+
+.bann button {
+  font-family: calibri;
+  font-size: 22px;
+  font-weight: 600;
+  width: 230px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.post-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 100px;
+  padding: 0 90px;
+  /* border: solid red; */
+}
+
+.post-cont {
+  background-color: #ffffff;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 10px;
+  margin: 0 25px;
+  /* border: solid yellowgreen; */
+}
+
+.icon img {
+  position: relative;
+  width: 25px;
+  margin: 30px;
+  margin-right: 0;
+  margin-bottom: 0;
+  /* border: solid greenyellow; */
+  
+}
+
+.person {
+  width: 100%;
+  height: 100%;
+  /* border: solid purple; */
+}
+
+.img {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  /* border: solid pink; */
+}
+
+.info {
+  padding-left: 30px;
+  padding-right: 15px;
+}
+
+.info h2{
+  font-family: calibri;
+  font-size: 40px;
+  text-align: center;
+}
+
+.info p {
+  font-family: calibri;
+  font-size: 25px;
+}
+
+.info a {
+  font-family: calibri;
+  font-size: 24px;
+  color: #67b54b;
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+/* ---------------------  SESION 5  ----------------------- */
+
+/* ------------------------------------- COSAS AGREGADAS CON BOOTSTRAP --------------------------------- */
+
+.tarjetas{
+  margin: 100px;
+}
+
+.card-img-top {
+  width: 237px;
+  height: 285px;
+}
+
+/* ---------------------------------------------------------------- */
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+ 
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+  body {
+    background-color: rgb(133, 56, 209);
+  }
+
+  /* .navbar, .actions {
+    /* display: none; */
+  } */
+
+  .h > h1 {
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+  }
+
+  .h {
+    margin-top: 60px;
+  }
+
+  .banner > img{
+    width: 100%;
+  }
+
+  .publish > form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 100px auto;
+    }
+
+    .publish > form > button {
+      width: 25%;
+    }
+
+    .secc {
+      flex-direction: column;
+      max-width: 90%;
+    }
+
+    .video > video {
+      width: 100%;
+    }
+
+    .publish > h3 {
+      font-size: 25px;
+      line-height: 1.2;
+    }
+
+    .features {
+      grid-template: repeat(4, 1fr) / 1fr;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    
+    .feature-image {
+      display: none;
+    }
+  
+
+  
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+  
 }
