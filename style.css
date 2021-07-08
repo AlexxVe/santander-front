@@ -36,12 +36,12 @@ body {
   
   }
 
-  .correo {
+  .signup-form {
     text-align: center;
     margin: 20px;
    }
 
-  .correo > input{
+  .signup-form > input{
     padding: 9.5px;
     border-radius: 5px;
     border-top-right-radius: 0;
@@ -50,7 +50,7 @@ body {
     border: 1px solid rgb(196, 201, 196);
   }
 
-  .correo > button{
+  .signup-form > button{
     padding: 10.5px 15px;
     border-radius: 5px;
     border-top-left-radius: 0;
